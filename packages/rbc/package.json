@@ -1,0 +1,53 @@
+{
+  "name": "@av/rbc",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "tech <tech.av@gmail.com>",
+  "homepage": "https://github.com/sptungG/packages#readme",
+  "license": "ISC",
+  "type": "module",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "source": "src/index.ts",
+  "main": "lib/index.cjs",
+  "module": "lib/index.module.js",
+  "exports": {
+    "require": "./lib/index.cjs",
+    "default": "./lib/index.modern.js"
+  },
+  "types": "lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sptungG/packages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sptungG/packages/issues"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@av/rbc.test.js",
+    "dev": "farm start",
+    "build": "rimraf lib && microbundle -f modern,esm,cjs",
+    "clean": "farm clean"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@farmfe/cli": "^1.0.0",
+    "@farmfe/core": "^1.0.3",
+    "@farmfe/plugin-react": "^1.0.0",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "react-refresh": "^0.14.0",
+    "typescript": "^5.5.4"
+  }
+}

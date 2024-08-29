@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "version": "independent",
+  "command": {
+    "version": {
+      "allowBranch": ["master", "develop"],
+      "conventionalCommits": true
+    },
+    "publish": {
+      "conventionalCommits": true,
+      "allowBranch": ["master", "develop"],
+      "message": "chore(release): publish"
+    }
+  }
+}
