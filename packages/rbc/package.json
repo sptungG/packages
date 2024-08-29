@@ -1,5 +1,5 @@
 {
-  "name": "@av/rbc",
+  "name": "@av25/rbc",
   "version": "0.0.1",
   "description": "> TODO: description",
   "author": "tech <tech.av@gmail.com>",
@@ -7,8 +7,7 @@
   "license": "ISC",
   "type": "module",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
   "files": [
     "lib"
